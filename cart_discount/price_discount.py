@@ -9,9 +9,11 @@ def discount(item_prices):
     If a customer has ordered three or more items, the cheapest item is free.
     Example: if this function is called with a list of [10, 4, 20] then return 4.
     """
+    if len(item_prices) >= 3:
+        return min(item_prices)
+    return 0
 
-    pass  # todo replace this line with your code 
-
+     
 
 if __name__ == '__main__':
     main()
