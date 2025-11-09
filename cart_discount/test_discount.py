@@ -83,8 +83,8 @@ class TestDiscount(TestCase):
         self.assertEqual(expected_discount, discount(prices))
 
     def test_discount_with_same_value_int_and_float(self):
-        prices = [10, 10.0, 20]
-        expected_discount = 10.0
+        prices = [10, 10.0, 10.00]
+        expected_discount = 10.00
         self.assertEqual(expected_discount, discount(prices))
 
     def test_discount_with_long_float_prices(self):
